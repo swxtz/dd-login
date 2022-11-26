@@ -1,0 +1,30 @@
+@import "../../styles/colors";
+
+.header-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: .3125rem;
+}
+
+.header-title {
+	display: flex;
+	align-items: center; 
+	gap: 10px;
+
+	h2 {
+		color: $text-title;
+		font-weight: 600;
+		font-size: 1.5rem;
+		line-height: 2.25rem ;
+	}
+}
+
+.header-subtitle {
+	p {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		font-family: 'Roboto', sans-serif;
+		color: $text-base;
+		font-weight: 500;
+	}
+}
