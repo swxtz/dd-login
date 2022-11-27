@@ -4,7 +4,7 @@
 	display: flex;
 	align-items: center;
 	
-	border: 1px solid $border-color;
+	border: 2px solid $border-color;
 	border-radius: .25rem;
 	padding: .9375rem .75rem;
 	gap: .3125rem;
@@ -36,6 +36,10 @@
 
 .input-wrapper {
 	width: 100%;
+}
+
+.input-pass {
+	margin-top: 1.25rem;
 }
 
 

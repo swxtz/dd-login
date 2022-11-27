@@ -14,7 +14,9 @@ export function Home() {
 				</div>
 				<div className="home-form">
 					<HeaderForm />
-					<LoginForm />
+					<div className="home-inputs">
+						<LoginForm />
+					</div>
 				</div>
 			</div>
 		</div>

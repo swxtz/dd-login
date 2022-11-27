@@ -22,38 +22,40 @@ export function InputForm({
 
 	return (
 		<div className="input-wrapper">
-			<p>{email}</p>
-			<div className="input-content">
-				<IconMail fill={isEmailFocus ? "#FFC632" : "#AFB6C2"} />
-				<input
-					className="input-input"
-					placeholder={emailPlaceholder}
-					onFocus={() => {
-						setIsEmailFocus(true);
-					}}
-					onBlur={() => {
-						setIsEmailFocus(false);
-					}}
-					type="text"
-					{...rest}
-				/>
+			<div className="input-email">
+				<p>{email}</p>
+				<div className="input-content">
+					<IconMail fill={isEmailFocus ? "#FFC632" : "#AFB6C2"} />
+					<input
+						placeholder={emailPlaceholder}
+						onFocus={() => {
+							setIsEmailFocus(true);
+						}}
+						onBlur={() => {
+							setIsEmailFocus(false);
+						}}
+						type="text"
+						{...rest}
+					/>
+				</div>
 			</div>
 
-			<p>{pass}</p>
-			<div className="input-content">
-				<IconLock fill={isPassFocus ? "#FFC632" : "#AFB6C2"} />
-				<input
-					className="input-input"
-					placeholder={passPlaceholder}
-					onFocus={() => {
-						setIsPassFocus(true);
-					}}
-					onBlur={() => {
-						setIsPassFocus(false);
-					}}
-					type="pass"
-					{...rest}
-				/>
+			<div className="input-pass">
+				<p>{pass}</p>
+				<div className="input-content ">
+					<IconLock fill={isPassFocus ? "#FFC632" : "#AFB6C2"} />
+					<input
+						placeholder={passPlaceholder}
+						onFocus={() => {
+							setIsPassFocus(true);
+						}}
+						onBlur={() => {
+							setIsPassFocus(false);
+						}}
+						type="pass"
+						{...rest}
+					/>
+				</div>
 			</div>
 		</div>
 	);
