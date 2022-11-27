@@ -1,7 +1,6 @@
 import React from "react";
 import { iconsProps } from "../../types/IconsTypes";
 
-import "./styles.scss";
 
 export function IconMail({fill = "#AFB6C2"}: iconsProps) {
 	return (

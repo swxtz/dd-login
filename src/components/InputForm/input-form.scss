@@ -8,6 +8,7 @@
 	border-radius: .25rem;
 	padding: .9375rem .75rem;
 	gap: .3125rem;
+	transition: border 100ms;
 
 	p {
 		font-weight: 500;
@@ -17,6 +18,7 @@
 	input {
 		color: $text-base;
 		flex: 1;
+		
 	}
 
 	&placeholder{
@@ -35,4 +37,5 @@
 .input-wrapper {
 	width: 100%;
 }
+
 

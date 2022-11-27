@@ -17,7 +17,7 @@ export function InputForm({ label, icon, img, ...rest }: InputFormProps) {
 			<p>{label}</p>
 			<div className="input-content">
 				<IconMail fill={isFocus ? "#FFC632" : "#AFB6C2"} />
-				<input onFocus={() => {setIsFocus(true);}} onBlur={() => {setIsFocus(false);}} type="text" {...rest} />
+				<input className="input-input" onFocus={() => {setIsFocus(true);}} onBlur={() => {setIsFocus(false);}} type="text" {...rest} />
 				<img src={img} alt="" />
 			</div>
 		</div>
