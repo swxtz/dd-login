@@ -9,16 +9,17 @@ import lockFocusSvg from "../../assets/svg/lock-focus.svg";
 
 import eyeSvg from "../../assets/svg/eye.svg";
 
-
-
 export function LoginForm() {
 	return (
 		<div>
 			<form action="" className="login-form" method="post">
-				<InputForm label="E-mail" type={"email"} placeholder="Digite seu e-mail" icon={emailSvg} />
-				<InputForm label="Senha"  type={"password"} placeholder="Digite sua senha" icon={lockSvg} img={eyeSvg} />
+				<InputForm
+					email="E-mail"
+					emailPlaceholder="Digite seu e-mail"
+					pass="Senha"
+					passPlaceholder="Digite sua senha"
+				/>
 			</form>
 		</div>
 	);
-
 }

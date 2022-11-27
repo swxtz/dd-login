@@ -1,24 +1,59 @@
 import React, { InputHTMLAttributes, useState } from "react";
+import { IconLock } from "../IconLock/IconLock";
 import { IconMail } from "../IconMail/IconMail";
 import "./input-form.scss";
 
 interface InputFormProps extends InputHTMLAttributes<HTMLInputElement> {
-	label: string;
-	icon?: string;
-	img?: string;
+	email: string;
+	emailPlaceholder: string;
+	pass: string;
+	passPlaceholder: string;
 }
 
-export function InputForm({ label, icon, img, ...rest }: InputFormProps) {
-
-	const [isFocus, setIsFocus] = useState(false);
+export function InputForm({
+	email,
+	pass,
+	emailPlaceholder,
+	passPlaceholder,
+	...rest
+}: InputFormProps) {
+	const [isEmailFocus, setIsEmailFocus] = useState(false);
+	const [isPassFocus, setIsPassFocus] = useState(false);
 
 	return (
 		<div className="input-wrapper">
-			<p>{label}</p>
+			<p>{email}</p>
 			<div className="input-content">
-				<IconMail fill={isFocus ? "#FFC632" : "#AFB6C2"} />
-				<input className="input-input" onFocus={() => {setIsFocus(true);}} onBlur={() => {setIsFocus(false);}} type="text" {...rest} />
-				<img src={img} alt="" />
+				<IconMail fill={isEmailFocus ? "#FFC632" : "#AFB6C2"} />
+				<input
+					className="input-input"
+					placeholder={emailPlaceholder}
+					onFocus={() => {
+						setIsEmailFocus(true);
+					}}
+					onBlur={() => {
+						setIsEmailFocus(false);
+					}}
+					type="text"
+					{...rest}
+				/>
+			</div>
+
+			<p>{pass}</p>
+			<div className="input-content">
+				<IconLock fill={isPassFocus ? "#FFC632" : "#AFB6C2"} />
+				<input
+					className="input-input"
+					placeholder={passPlaceholder}
+					onFocus={() => {
+						setIsPassFocus(true);
+					}}
+					onBlur={() => {
+						setIsPassFocus(false);
+					}}
+					type="pass"
+					{...rest}
+				/>
 			</div>
 		</div>
 	);
