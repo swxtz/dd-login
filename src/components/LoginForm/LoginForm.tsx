@@ -2,6 +2,7 @@ import React from "react";
 import { InputForm } from "../InputForm/InputForm";
 import "./login-form.scss";
 import { Checkbox } from "../Checkbox/Checkbox";
+import { ButtonLogin } from "../ButtonLogin/ButtonLogin";
 
 export function LoginForm() {
 	return (
@@ -15,6 +16,9 @@ export function LoginForm() {
 				/>
 				<div className="login-form-checkbox">
 					<Checkbox text="Lembre-me?" link="Esqueci minha senha" />
+				</div>
+				<div className="login-form-button">
+					<ButtonLogin title="entrar" />
 				</div>
 			</form>
 		</div>
