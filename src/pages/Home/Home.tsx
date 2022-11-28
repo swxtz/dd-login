@@ -21,7 +21,7 @@ export function Home() {
 					<div className="home-about-form">
 						<Checkbox 
 							text="Lembre-me?"
-							link="Esqueceu sua senha?"
+							link="Esqueci minha senha"
 						/>
 					</div>
 				</div>
