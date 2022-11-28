@@ -18,7 +18,10 @@ export function LoginForm() {
 					<Checkbox text="Lembre-me?" link="Esqueci minha senha" />
 				</div>
 				<div className="login-form-button">
-					<ButtonLogin title="entrar" />
+					<ButtonLogin  title="entrar" />
+				</div>
+				<div className="login-form-link">
+					<p>Não tem uma conta? <a href="#">Registre-se</a></p>
 				</div>
 			</form>
 		</div>
