@@ -1,13 +1,7 @@
 import React from "react";
 import { InputForm } from "../InputForm/InputForm";
-
-import emailSvg from "../../assets/svg/mail.svg";
-import emailFocusSvg from "../../assets/svg/mail-focus.svg";
-
-import lockSvg from "../../assets/svg/lock.svg";
-import lockFocusSvg from "../../assets/svg/lock-focus.svg";
-
-import eyeSvg from "../../assets/svg/eye.svg";
+import "./login-form.scss";
+import { Checkbox } from "../Checkbox/Checkbox";
 
 export function LoginForm() {
 	return (
@@ -19,6 +13,9 @@ export function LoginForm() {
 					pass="Senha"
 					passPlaceholder="Digite sua senha"
 				/>
+				<div className="login-form-checkbox">
+					<Checkbox text="Lembre-me?" link="Esqueci minha senha" />
+				</div>
 			</form>
 		</div>
 	);

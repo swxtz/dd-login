@@ -4,7 +4,6 @@ import "./home.scss";
 import { Logo } from "../../components/Logo/Logo";
 import { HeaderForm } from "../../components/HeaderForm/HeaderForm";
 import { LoginForm } from "../../components/LoginForm/LoginForm";
-import { Checkbox } from "../../components/Checkbox/Checkbox";
 
 export function Home() {
 	return (
@@ -17,12 +16,6 @@ export function Home() {
 					<HeaderForm />
 					<div className="home-inputs">
 						<LoginForm />
-					</div>
-					<div className="home-about-form">
-						<Checkbox 
-							text="Lembre-me?"
-							link="Esqueci minha senha"
-						/>
 					</div>
 				</div>
 			</div>
